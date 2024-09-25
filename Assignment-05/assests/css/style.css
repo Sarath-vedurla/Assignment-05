@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;;
+}
+header {
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px #000;
+    
+}
+#lo{
+    height:50px;
+}
+ header h1, header p {
+    font-family: 'Cormorant Garamond', serif;
+}
+header p{
+    margin-right:20px;
+    font-style: italic;
+    font-stretch: expanded;
+    font-size: x-large;
+}
+#nav-bar li{
+    display: inline-block;
+    margin:0 20px;
+}
+#nav-bar ul{
+    margin-left:200px;
+}
+#nav-bar a{
+    text-decoration: none;
+    color:white;
+    font-size: larger;
+    margin-right:20px;
+    text-transform: uppercase;
+    display: block;
+    position:relative;
+    cursor:pointer;
+    padding:10px;
+}
+#nav-bar a::before{
+    content:"";
+    width:100%;
+    height:4px;
+    position:absolute;
+    left:0;
+    bottom:0;
+    transition:0.5s transform ease;
+    transform:scale3d(0,1,1);
+    transform-origin:0 50%;
+}
+#nav-bar a:hover::before{
+    transform: scale3d(1,1,1);
+}
+#nav-bar a::before{
+    background: white;
+    transform-origin: 100% 50%;
+}
+#nav-bar a:hover::before{
+    transform-origin:0 50%;
+}
+.templ{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0px;
+    left:0;
+    z-index: -1;
+}
+.sec-2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left:13%;
+    margin-top:-20%;
+} 
+.sec-2 h1{
+  font-size:xx-large;  
+  color:white;
+  font-style: normal;
+  text-shadow:#989393;
+  margin-left:100px;
+}
+.sec-2 p{
+    font-style: italic;
+    color:white;
+    font-size: larger;
+    margin-top:10px;
+}
+.sec-1 {
+    background:rgba(250, 250, 250, 0.893); 
+    height: 40%; 
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:20%;
+    margin-left:15%;
+    padding:30px 0 30px 0;
+    border-radius: 10px;
+}
+
+.sec-1 .container1{
+    margin-bottom: 20px;
+}
+
+.sec-1 button {
+    background-color: blue; 
+    color: white; 
+    border: none; 
+    padding: 15px 30px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    cursor: pointer;
+}
+
+.sec-1 button:hover {
+    background-color: darkblue; /* Slightly darker blue on hover */
+}
+footer{
+    position:fixed;
+    bottom:0;
+    box-shadow: 0 -10 10px #000;
+    background: rgba(0, 0, 0, 0.3);
+    color:white;
+    width:100%;
+}
+footer p{
+    margin-left:45%;
+}

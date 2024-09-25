@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/register.css">
+</head>
+<body>
+    <img src="./assests/img/Temp.jpg" alt="n">
+    <div class="container" id="container">
+        <!-- Register Form -->
+        <div class="form-container sign-up-container">
+            <form id="registerForm" onsubmit="return validateRegister()">
+                <h2>Register</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                
+                <label for="registerPassword">Create Password</label>
+                <input type="password" id="registerPassword" placeholder="Create a password">
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+                
+                <button type="submit">Register</button>
+                <p class="error-message" id="registerError"></p>
+                <a href="./login.html" class="toggle-link" id="goTologin">If You have an account? Login</a>
+            </form>
+        </div>
+
+        <!-- Overlay Container -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us, please login with your personal info</p>
+                    <a href="login.html"><button class="ghost" id="signIn">LogIn</button></a>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us, please login with your personal info</p>
+                    <a href="login.html"><button class="ghost" id="signIn">LogIn</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./assests/js/reg.js"></script>
+</body>
+</html>

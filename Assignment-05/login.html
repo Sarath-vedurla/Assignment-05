@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assests/css/login.css">
+</head>
+<body>
+    <img src="./assests/img/Temp.jpg" alt="n">
+    <div class="container" id="container">
+        <!-- Login Form -->
+        <div class="form-container sign-in-container">
+            <form id="loginForm" onsubmit="return validateLogin()">
+                <h1>Login</h1>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+                <button type="button" onclick="handleLogin()">Login</button>
+                <p class="error-message" id="loginError"></p>
+                <p id="text">Already have an account?<a id="i" href="./register.html">Register</a></p>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-container sign-up-container">
+            <form id="registerForm" onsubmit="return validateRegister()">
+                <h2>Register</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                
+                <label for="registerPassword">Create Password</label>
+                <input type="password" id="registerPassword" placeholder="Create a password">
+                
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+                
+                <button type="submit">Register</button>
+                <p class="error-message" id="registerError"></p>
+                <p id="text">Already have an account?<a id="i" href="./login.html">login</a></p>
+            </form>
+        </div>
+
+        <!-- Overlay Container -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us, please login with your personal info</p>
+                    <button class="ghost" id="signIn">LogIn</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start your journey with us</p>
+                    <button class="ghost" id="signUp">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./assests/js/script.js"></script>
+</body>
+</html>
